@@ -1,0 +1,7 @@
+name: release
+# Drill fixture (crew's release leg, #762): the duty reads the ceremony pin
+# below. Dispatch-only, so nothing ever runs on this sandbox.
+on: workflow_dispatch
+jobs:
+  release:
+    uses: heavy-duty/ceremony/.github/workflows/release.yml@0.7.11
